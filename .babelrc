@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "es2015",
+    "stage-1",
+    "react",
+    "flow"
+  ],
+  "plugins": [
+    "transform-es2015-modules-systemjs",
+    "transform-runtime",
+    "transform-object-rest-spread",
+    "transform-function-bind",
+    ["lodash", { "id": ["lodash", "semantic-ui-react"] }]
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    }
+  }
+}

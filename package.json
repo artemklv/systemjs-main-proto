@@ -1,0 +1,30 @@
+{
+  "name": "systemjs-main-proto",
+  "version": "0.0.1",
+  "description": "systemjs main proto",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build && mkdir build && rimraf dist && mkdir dist",
+    "link": "rm -f ./src/assets/system.js && cp ./node_modules/systemjs/dist/system.js ./src/assets/",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "chokidar-socket-emitter",
+    "start": "npm run server && npm run watch"
+  },
+  "author": "Artem Klevakin",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "systemjs": "^0.20.19"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "chokidar": "^1.7.0",
+    "chokidar-socket-emitter": "^0.6.0",
+    "http-server": "^0.10.0",
+    "systemjs-hot-reloader": "^1.1.0",
+    "systemjs-plugin-babel": "0.0.25"
+  }
+}

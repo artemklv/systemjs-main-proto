@@ -1,0 +1,27 @@
+{
+  "transpiler": "plugin-babel",
+  "map": {
+    "plugin-babel": "node_modules/systemjs-plugin-babel/plugin-babel.js",
+    "systemjs-hot-reloader": "node_modules/systemjs-hot-reloader/dist/index.js",
+    "systemjs-babel-build": "node_modules/systemjs-plugin-babel/systemjs-babel-browser.js",
+    "systemjs-hmr": "node_modules/systemjs-hmr/dist/systemjs-hmr.js",
+    "app": "app",
+    "react": "node_modules/react",
+    "react-dom": "node_modules/react-dom",
+    "es2015": "node_modules/"
+  },
+  "packages": {
+    "app": { "main": "index.js", "defaultExtension": "js"},
+    "react": { "main": "dist/react.js", "defaultExtension": "js" },
+    "react-dom": { "main": "dist/react-dom.min.js", "defaultExtension": "js" }
+  },
+  "meta": {
+    "*.js": {
+      "babelOptions": {
+        "react": true,
+        "stage1": true,
+        "react-hmre": true
+      }
+    }
+  }
+}

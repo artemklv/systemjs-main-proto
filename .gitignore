@@ -1,0 +1,10 @@
+# ide
+.idea/
+
+# compile files
+dist/
+build/
+
+# source files
+node_modules/
+src/assets/
